@@ -1,0 +1,250 @@
+/* Section 1 */
+.jumbotron{
+    height: 100vh;
+}
+.header-background{
+    background-image: url("../../assets/imgs/home/home-backround.svg");
+    filter: brightness(90%);
+    background-size: cover;
+}
+#headTitle{
+    margin-top: 10rem;
+}
+#touchBtn{
+    font-size: 25px;
+    color: white;
+    margin:20px 0;
+    background-color: transparent;
+    border: 0;
+}
+#touchBtn:hover {
+    border: 1px solid white;
+}
+
+.underline:before{
+    display:block;
+    content: '';
+    border-bottom: 2px solid white;
+    transform: scaleX(1);  
+    transition: transform 250ms ease-in-out;
+}
+.underline:hover:before{ transform: scaleX(0); }
+.underline.fromRight:before{ transform-origin:100% 50%; }
+.underline:after{
+    display:block;
+    content: '';
+    border-bottom: 2px solid white;
+    transform: scaleX(1);  
+    transition: transform 250ms ease-in-out;
+}
+.underline:hover:after{ transform: scaleX(0); }
+.underline.fromRight:after{ transform-origin:100% 50%; }
+
+/* Section 3 */
+#section3{
+    margin-bottom: 15px;
+}
+.set-height{
+    height:200px;
+}
+.casePicture{
+    height: 360px;
+    width: 100%;
+    background-size:cover;
+}
+.casePicture1{
+    background-image: url("../../assets/imgs/home/home-case1.jpg");
+    filter: brightness(60%);
+    transition: all .3s ease-in-out;
+}
+.casePicture2{
+    background-image: url("../../assets/imgs/home/home-case2.jpg");
+    filter: brightness(70%);
+    transition: all .3s ease-in-out;
+}
+.casePicture1:hover, .casePicture2:hover{
+    filter: brightness(100%);
+}
+.border{
+    border: 1px solid gray;
+}
+#workTitle{
+    font-weight: bold;
+    text-align: center;
+}
+.l2{
+    color: black;
+}
+.m1bold{
+    color: black;
+}
+.m2{
+    color: black;
+}
+.caseLink:hover{
+    color: white;
+}
+.caseDetail1, .caseDetail2 {
+    filter: brightness(100%);
+}
+
+.caseTitle1, .caseTitle2 {
+    width:100%;
+    height:100%;
+    transition-property: opacity, transform;
+    transition-duration: 1s;
+}
+.caseText1, .caseText2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+}
+
+.flex{
+    display:flex;
+    justify-content: center;
+    padding:10% 10%;
+}
+.relative{
+    position:relative;
+}
+.absolute{
+    position:absolute;
+}
+.set-height:hover .caseTitle1,.set-height:hover .caseTitle2{
+    opacity:0;
+    transition:all 0.5s ease-in-out;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+.set-height:hover .caseText1,.set-height:hover .caseText2{
+    opacity: 1;
+    transition:all 1s ease-in-out;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+}
+
+
+
+@media(min-width: 993px){
+    /* Section 1 */
+    .title1{
+        display: block;
+    }
+    .title2{
+        display: none;
+    }
+}
+
+@media(max-width: 992px){
+    /* Section 1 */
+    .title1{
+        display: none;
+    }
+    .title2{
+        display: block;
+    }
+    .j1{
+        font-size: 40px;
+    }
+    #touchBtn{
+        font-size: 20px;
+    }
+    /* Section 3 */
+
+}
+
+@media(max-width: 767px){
+    /* Section 2 */
+    .icon{
+        height: 160px;
+        width: 160px;
+        background-size: 130px,130px;
+        margin-top: 10px;
+    }
+    #startBtn{
+        margin-top: 25px;
+    }
+}
+
+@media(max-width: 576px){
+    /* Section 1 */
+    .j1{
+        font-size:30px; 
+    }
+    /* Section 2 */
+    .icon{
+        height: 140px;
+        width: 100%;
+        background-size: 100px,100px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    p{
+        margin-bottom: 0;
+    }
+    .mt-2{
+        margin-top: 0 !important;
+    }
+    /* Section 3 */
+    #workTitle{
+        font-size: 28px;
+    }
+    .l2{
+        font-size: 25px;
+    }
+    .m1bold{
+        font-size: 18px;
+    }
+    .casePicture[_ngcontent-c3] {
+        height: 200px;
+    }
+    /* Section 4 */
+    #processTitle{
+        font-size: 28px;
+    }
+    .casePicture{
+        height:300px;
+    }
+}
+@media (max-width:476px){
+    .m2{
+        font-size:16px;
+    }
+}
+@media(max-width: 320px){
+    /* Section 2 */
+    .icon{
+        height: 100px;
+        width: 100%;;
+        background-size: 80px,80px;
+    }
+    .mt-5{
+        margin-top: 2rem !important;
+    }
+    .m1{
+        font-size: 18px;
+    }
+    .s1{
+        font-size: 16px;
+    }
+    /* Section 3 */
+    .casePicture[_ngcontent-c3] {
+        height: 170px;
+    }
+    #workTitle{
+        font-size: 23px;
+    }
+    .l2{
+        font-size: 20px;
+    }
+    .m1bold{
+        font-size: 13px;
+    }
+    /* Section 4 */
+    #processTitle{
+        font-size: 23px;
+    }
+}

@@ -1,1 +1,139 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@font-face {  
+    /* font-properties */  
+    font-family: Aaargh;  
+    src: url('assets/font/AlegreyaSans-Regular.ttf');
+  }
+  @font-face {  
+    /* font-properties */  
+    font-family: logo;  
+    src: url('assets/font/AlegreyaSans-Bold.ttf');
+  }
+  
+  body {
+    font: normal 100% Aaargh;
+    /* background-color:rgb(110, 110, 110); */
+    width: 100%;
+  }
+  button {
+    border-radius: 0px;
+  }
+  .centerDiv{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+  }
+  .centerDiv2{ 
+    display: flex; 
+    align-items: center; 
+  }
+  .centerDiv3{ 
+    display: flex; 
+    justify-content: center;
+  }
+  .yellow{
+    color: #e9bf03;
+  }
+  .j1{
+    font-size:50px;
+    font-weight: bold;
+    color: white;
+  }
+  .l1{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+  }
+  .l2{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+  }
+  .m1{
+    font-size:25px;
+    color: white;
+  }
+  .m1bold{
+    font-size:25px;
+    font-weight: bold;
+    color: white;
+  }
+  .m2{
+    font-size:20px;
+    color: white;
+  }
+  .m2bold{
+    font-size:20px;
+    font-weight: bold;
+    color: white;
+  }
+  .m3{
+    font-size:22px;
+    color: white;
+  }
+  .m3bold{
+    font-size:22px;
+    font-weight: bold;
+  }
+  .s1{
+    font-size:18px;
+    color: white;
+  }
+  .s2{
+    font-size:15px;
+    color: white;
+  }
+  .s2bold{
+    font-size:15px;
+    font-weight: bold;
+    color: white;
+  }
+  .s3{
+    font-size:14px;
+    color: white;
+  }
+  .s3bold{
+    font-size:13px;
+    font-weight: bold;
+    color: white;
+  }
+  .s4{
+    font-size: 12px;
+    font-weight: normal;
+    color: white;
+  }
+  .error{
+    color: #ff2323;
+    font-size: 16px;
+  }
+  .flex{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+  }
+  .btn-white-flip{
+    color:#fff;
+    font-size:22px;
+    border:1px solid #fff;
+    padding:15px 50px;
+  }
+  .word-space{
+    letter-spacing:-1.1px;
+    word-spacing:3px;
+  }
+  .bg-color{
+    color:#726b64;
+  }
+  
+ 
+  .fixed-top{
+    width: 100%;
+  }
+  
+  a:hover{
+    cursor: pointer;
+  }
+  .border{
+    border:1px solid lightgrey;
+  }

@@ -1,0 +1,28 @@
+
+<div style="background-color:#f7f7f7">
+<div class="container pt-2" >
+
+  <div *ngIf="requestList;else noresults">
+      <div class="m-2 row" *ngFor="let request of requestList">
+              <div id="card" class="col-6 bg-color padding" style="font-size:18px;margin:25px" >
+                <p><span style="font-weight:bold">What is it: </span>{{request.description}}</p>
+                <!-- <p><span style="font-weight:bold">Request ID:</span> {{request.id}}</p> -->
+                <p><span style="font-weight:bold">Customer ID:</span> {{request.customerId}}</p>
+                <p><span style="font-weight:bold">From Where:</span> {{request.pickupAddress}}</p>
+                <p><span style="font-weight:bold">To Where:</span> {{request.destinationAddress}}</p>
+                <div style="font-weight:bold">Status:<span id="status" class="text-center" style="border:2px solid lightgreen;margin:10px;padding:5px;">{{request.status}}</span></div>
+                <br>
+                <a 
+                  class="btn btn-success mt-4" 
+                  (click)="pickup(request.id)"
+                  style="width:50%;font-size:18px;color:white"
+                >
+                Pick Up
+                </a>
+          </div>
+        </div>
+  </div>
+  <ng-template #noresults style="color:red;font-weight:bold"><div>{{errorMessage}}</div></ng-template>
+  
+</div>
+</div>

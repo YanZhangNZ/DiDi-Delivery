@@ -1,0 +1,9 @@
+.display{
+    display:block;
+}
+.not-display{
+    display:none;
+}
+.bg-color{
+    display:flex;
+}

@@ -1,0 +1,10 @@
+.sticky{
+    position: fixed;
+    top: 0;
+    /* overflow: hidden; */
+    z-index: 10;
+    height:60px;
+    width:100%;
+    background-color:rgb(20, 47, 201);
+  }
+  

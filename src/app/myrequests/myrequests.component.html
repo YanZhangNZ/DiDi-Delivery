@@ -1,0 +1,30 @@
+<h3>My Requests</h3>
+
+<div class="container ">
+  <div class="row m-1" *ngFor="let request of requestList">
+    <div class="col-6 border m-1" style="font-size:18px">
+        <div class="ml-5 m-2">
+          <p><span>What is it: </span>{{request.description}}</p>
+          <!-- <p class="m2"><span>From who:</span> {{request.customerId}}</p> -->
+          <p><span>From Where:</span> {{request.pickupAddress}}</p>
+          <p><span>To Where:</span> {{request.destinationAddress}}</p>
+          <span>Status:</span><span style="border:2px solid lightgreen;margin:10px;padding:5px;">{{request.status}}</span>
+          <br>
+          <br>
+         
+          <div class="m-1" [ngClass]="request.status!='AVAILABLE'?'display':'not-display'" >
+            <a
+            [routerLink]="['/driverinfo/',request.id]" 
+            class="btn btn-success" 
+            (click)="showDriverDetails(request.id)"
+            routerLinkActive="active"
+            >
+              View Driver Information
+          </a>
+            <router-outlet></router-outlet>
+          </div>
+        </div>
+    </div>
+
+  </div>
+</div>
